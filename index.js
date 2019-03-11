@@ -30,6 +30,17 @@ app.delete('/api/product/eliminar/:productId', (req, res) => {
 
 });
 
-app.listen(port, () => {
-	console.log(`Api Rest corriendo en el localhost:${port}`);
-})
+
+mongoose.connect('mongodb://localhost:27017/tienda', (err, res) => {
+	if(err) {
+		return console.log(`Error al conectar la base de datos: ${err}`);
+
+	}
+		console.log('conexion a la base de datos establecida...')
+			app.listen(port, () => {
+				console.log(`Api Rest corriendo en el localhost:${port}`);
+		
+	});
+});
+
+
