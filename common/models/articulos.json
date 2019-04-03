@@ -1,0 +1,31 @@
+{
+  "name": "articulos",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true,
+      "id": true
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "autor": {
+      "type": "string",
+      "required": true
+    },
+    "contenido": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
