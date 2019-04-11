@@ -1,0 +1,97 @@
+{
+  "name": "wp_posts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "number",
+      "required": true
+    },
+    "post_author": {
+      "type": "number",
+      "required": true
+    },
+    "post_date": {
+      "type": "date",
+      "required": true,
+      "dataType": "timestamp",
+      "default": "now"
+    },
+    "post_content": {
+      "type": "string",
+      "required": true,
+      "dataType": "longtext"
+    },
+    "post_title": {
+      "type": "string",
+      "required": true
+    },
+    "post_excerpt": {
+      "type": "string"
+    },
+    "post_status": {
+      "type": "string",
+      "default": "publish"
+    },
+    "comment_status": {
+      "type": "string",
+      "default": "open"
+    },
+    "ping_status": {
+      "type": "string",
+      "default": "open"
+    },
+    "post_password": {
+      "type": "string"
+    },
+    "post_name": {
+      "type": "string",
+      "required": true
+    },
+    "to_ping": {
+      "type": "string"
+    },
+    "pinged": {
+      "type": "string"
+    },
+    "post_modified": {
+      "type": "date",
+      "dataType": "timestamp",
+      "default": "now"
+    },
+    "post_content_filtered": {
+      "type": "string",
+      "dataType": "longtext"
+    },
+    "post_parent": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "guid": {
+      "type": "string"
+    },
+    "menu_order": {
+      "type": "number",
+      "default": 0
+    },
+    "post_type": {
+      "type": "string",
+      "default": "post"
+    },
+    "post_mime_type": {
+      "type": "string"
+    },
+    "comment_count": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,52 @@
+{
+  "name": "wp_users",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "number",
+      "required": true
+    },
+    "user_login": {
+      "type": "string",
+      "required": true
+    },
+    "user_pass": {
+      "type": "string",
+      "required": true
+    },
+    "user_nicename": {
+      "type": "string",
+      "required": true
+    },
+    "user_email": {
+      "type": "string",
+      "required": true
+    },
+    "user_url": {
+      "type": "string"
+    },
+    "user_registered": {
+      "type": "date",
+      "required": true,
+      "dataType": "timestamp"
+    },
+    "user_activation_key": {
+      "type": "string"
+    },
+    "user_status": {
+      "type": "number"
+    },
+    "display_name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

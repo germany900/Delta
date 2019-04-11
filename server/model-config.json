@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "wp_users": {
+    "dataSource": "db",
+    "public": true
+  },
+  "wp_posts": {
+    "dataSource": "db",
+    "public": true
+  },
+  "wp_comments": {
+    "dataSource": "db",
+    "public": true
+  }
+}
